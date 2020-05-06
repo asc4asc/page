@@ -5,11 +5,20 @@
     		<!-- Bootstrap CSS -->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+<style>
+S12a S21a {
+  color: blue;
+}
+</style>
+
 <script type="text/javascript">
 
 function ClearAll() { 
     document.getElementById("S12").innerHTML="00";
     document.getElementById("S21").innerHTML="00";
+    document.getElementById("S12a").innerHTML="0";
+    document.getElementById("S21a").innerHTML="0";
+
 } 
 
 function ClearNull() { 
@@ -25,6 +34,7 @@ function RedPlus() {
     var a=document.getElementById("S21").innerHTML[0];
     if ( n<5 ) { n=n*1+1; };
     document.getElementById("S12").innerHTML=e+n;
+    document.getElementById("S12a").innerHTML=n; 
     if ( n==5 ) { EndBout(); } 
     else {if ( e=="A" || a=="A" ) { EndBout(); }; }    
 }
@@ -34,6 +44,7 @@ function RedMinus() {
     var n=document.getElementById("S12").innerHTML[1];
     if ( n>0 ) { n=n*1-1; };
     document.getElementById("S12").innerHTML=e+n;
+    document.getElementById("S12a").innerHTML=n;
 }
 
 function GreenPlus() {
@@ -42,6 +53,7 @@ function GreenPlus() {
     var a=document.getElementById("S12").innerHTML[0];
     if ( n<5 ) { n=n*1+1; };
     document.getElementById("S21").innerHTML=e+n;
+    document.getElementById("S21a").innerHTML=n;
     if ( n==5 ) { EndBout(); }
     else {if ( e=="A" || a=="A" ) { EndBout(); }; }
 }
@@ -51,6 +63,7 @@ function GreenMinus() {
     var n=document.getElementById("S21").innerHTML[1];
     if ( n>0 ) { n=n*1-1; };
     document.getElementById("S21").innerHTML=e+n;
+    document.getElementById("S21a").innerHTML=n;
 }
 
 function GreenV() {
@@ -61,23 +74,6 @@ function RedV() {
     var n=document.getElementById("S12").innerHTML[1];
     document.getElementById("S12").innerHTML="A"+n;
 }
-
-function Rule() {
-    EndBout();
-    var e1=document.getElementById("S21").innerHTML[0];
-    var e2=document.getElementById("S12").innerHTML[0];
-    var n1=document.getElementById("S21").innerHTML[1];
-    var n2=document.getElementById("S12").innerHTML[1];
-    if ( e1=="D" ) { e1=" " };
-    if ( e1=="V" && n1==5 ) { n1=" " };
-    if ( e2=="D" ) { e2=" " };
-    if ( e2=="V" && n2==5 ) { n1=" " };
-    if ( n1==0 ) { n1="0" }
-    if ( n2==0 ) { n2="0" }
-    document.getElementById("S21").innerHTML=e1+n1;
-    document.getElementById("S12").innerHTML=e2+n2;
-}
-    
     
 function EndBout() { 
     var e1=document.getElementById("S21").innerHTML[0];
@@ -94,6 +90,8 @@ function EndBout() {
     };
     document.getElementById("S21").innerHTML=e1+n1;
     document.getElementById("S12").innerHTML=e2+n2;
+    document.getElementById("S21a").innerHTML=n1;
+    document.getElementById("S12a").innerHTML=n2;
 }
     
 function Double() {
@@ -105,6 +103,8 @@ function Double() {
     if ( n2<5 ) { n2=n2*1+1; };
     document.getElementById("S21").innerHTML=e1+n1;
     document.getElementById("S12").innerHTML=e2+n2;
+    document.getElementById("S21a").innerHTML=n1;
+    document.getElementById("S12a").innerHTML=n2;
     if ( n1==5 && n2<5 ) { EndBout(); };
     if ( n2==5 && n1<5 ) { EndBout(); };
     if ( n2==5 && n1==5 ) 
