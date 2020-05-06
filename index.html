@@ -41,10 +41,11 @@ function RedPlus() {
 
 function RedMinus() {
     var e=document.getElementById("S12").innerHTML[0];
-    var n=document.getElementById("S12").innerHTML[1];
-    if ( n>0 ) { n=n*1-1; };
+    var n1=document.getElementById("S12a").innerHTML;
+    if ( n1>0 ) { n1=n1*1-1; };
+    n=n1;
     document.getElementById("S12").innerHTML=e+n;
-    document.getElementById("S12a").innerHTML=n;
+    document.getElementById("S12a").innerHTML=n1;
 }
 
 function GreenPlus() {
@@ -61,10 +62,11 @@ function GreenPlus() {
 
 function GreenMinus() {
     var e=document.getElementById("S21").innerHTML[0];
-    var n=document.getElementById("S21").innerHTML[1];
-    if ( n>0 ) { n=n*1-1; };
+    var n1=document.getElementById("S21a").innerHTML;
+    if ( n1>0 ) { n1=n1*1-1; };
+    n=n1;
     document.getElementById("S21").innerHTML=e+n;
-    document.getElementById("S21a").innerHTML=n;
+    document.getElementById("S21a").innerHTML=n1;
 }
 
 function GreenV() {
