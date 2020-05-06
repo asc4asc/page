@@ -17,7 +17,6 @@ function ClearAll() {
     document.getElementById("S21").innerHTML="00";
     document.getElementById("S12a").innerHTML="0";
     document.getElementById("S21a").innerHTML="0";
-
 } 
 
 function ClearNull() { 
@@ -79,8 +78,8 @@ function RedV() {
 }
     
 function EndBout() { 
-    var e1=document.getElementById("S21").innerHTML[0];
-    var e2=document.getElementById("S12").innerHTML[0];
+    var e1=document.getElementById("S21a").innerHTML;
+    var e2=document.getElementById("S12a").innerHTML;
     var n1=document.getElementById("S21").innerHTML[1];
     var n2=document.getElementById("S12").innerHTML[1];
     if ( n1==5 ) { e1="V"; e2="D" };
@@ -99,9 +98,9 @@ function EndBout() {
     
 function Double() {
     var e1=document.getElementById("S21").innerHTML[0]; 
-    var n1=document.getElementById("S21").innerHTML;
+    var n1=document.getElementById("S21a").innerHTML;
     var e2=document.getElementById("S12").innerHTML[0];
-    var n2=document.getElementById("S12").innerHTML;
+    var n2=document.getElementById("S12a").innerHTML;
     if ( n1<5 ) { n1=n1*1+1; };
     if ( n2<5 ) { n2=n2*1+1; };
     document.getElementById("S21").innerHTML=e1+n1;
