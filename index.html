@@ -101,11 +101,7 @@ function Double() {
     document.getElementById("S12a").innerHTML=n2;
     if ( n1==5 && n2<5 ) { EndBout(); };
     if ( n2==5 && n1<5 ) { EndBout(); };
-    if ( n2==5 && n1==5 ) 
-    { 
-      GreenMinus();
-      RedMinus();
-    }  
+    if ( n2==5 && n1==5 ) { GreenMinus(); RedMinus(); }  
 }
     
 </script>   
@@ -124,8 +120,7 @@ function Double() {
 <button class="btn btn-primary" type="submit" onclick="Rule()">R</button>   
 <p>    
     <h1> <center> <font color="red">RED</font> <f1 id="S12">0</f1><f1a id="S12a">0 </f1a> <f2 id="S21">0</f2><f2a id="S21a">0 </f2a> <font color="green">GREEN</font></center> </h1>
-<p>
-    
+<p>  
 <button class="btn btn-primary" type="submit" onclick="RedPlus()">- + -</button>
 <button class="btn btn-primary" type="submit" onclick="Double()">+ D +</button>    
 <button class="btn btn-primary" type="submit" onclick="EndBout()">- Z -</button>   
