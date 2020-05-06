@@ -1,6 +1,6 @@
 Ein weiters einfaches Beispiel für die TRP!
 
-Ein einzelnes Gefecht auf 5 Punkte!
+Ein einzelnes Gefecht auf z.B auf 15 Punkte!
 
 Hier jetzt erstmal so das man es gut testen kann.
 
