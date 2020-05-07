@@ -8,8 +8,8 @@
             <title>Stopwatch and Counter for Fencing</title>
 
 <style>
-   f1a { color:blue; }
-   f2a { color:blue; }
+   f1a { color: blue; }
+   f2a { color: blue; }
  
     #timerContainer {
       max-width: 500px;
@@ -44,29 +44,7 @@
 <script type="text/javascript">
 
 const MaxPoints = 15; // 5,10,15,45 are typical for fencing.
-var startTimerButton = document.querySelector('.startTimer');
-var startTimerButton1 = document.querySelector('.startTimer1');
-var pauseTimerButton = document.querySelector('.pauseTimer');
-var pauseTimerButton1 = document.querySelector('.pauseTimer1');
-var timerDisplay = document.querySelector('.timer');
-var timerDisplay1 = document.querySelector('.timer1');
 
-var startTime;
-var startTime1;
-var updatedTime;
-var updatedTime1;
-var difference;
-var difference1;
-var tInterval;
-var tInterval1;
-var savedTime;
-var savedTime1;
-var paused = 0;
-var paused1 = 0;
-var running = 0;
-var running1 = 0;
-
-    
 function ClearAll() { 
     document.getElementById("S12").innerHTML="0";
     document.getElementById("S21").innerHTML="0";
@@ -158,111 +136,6 @@ function Double() {
     if ( n2==MaxPoints && n1<MaxPoints ) { EndBout(); };
     if ( n2==MaxPoints && n1==MaxPoints ) { GreenMinus(); RedMinus(); }  
 }
- 
-function startTimer(){
-  if(!running){
-    startTime = new Date().getTime();
-    tInterval = setInterval(getShowTime, 1);
-    paused = 0;
-    running = 1;
-    timerDisplay.style.background = "#FF0000";
-    timerDisplay.style.cursor = "auto";
-    timerDisplay.style.color = "yellow";
-    startTimerButton.classList.add('lighter');
-    pauseTimerButton.classList.remove('lighter');
-    startTimerButton.style.cursor = "auto";
-    pauseTimerButton.style.cursor = "pointer";
-  }
-}
-
-function startTimer1(){
-  if(!running1){
-    startTime1 = new Date().getTime();
-    tInterval1 = setInterval(getShowTime1, 1);
-    paused1 = 0;
-    running1 = 1;
-    timerDisplay1.style.background = "#FF0000";
-    timerDisplay1.style.cursor = "auto";
-    timerDisplay1.style.color = "yellow";
-    startTimerButton1.classList.add('lighter');
-    pauseTimerButton1.classList.remove('lighter');
-    startTimerButton1.style.cursor = "auto";
-    pauseTimerButton1.style.cursor = "pointer";
-  }
-}
-
-function pauseTimer(){
-  if (!difference){
-    // if timer never started, don't allow pause button to do anything
-  } else if (!paused) {
-    clearInterval(tInterval);
-    savedTime = difference;
-    paused = 1;
-    running = 0;
-    timerDisplay.style.background = "#A90000";
-    timerDisplay.style.color = "#690000";
-    timerDisplay.style.cursor = "pointer";
-    startTimerButton.classList.remove('lighter');
-    pauseTimerButton.classList.add('lighter');
-    startTimerButton.style.cursor = "pointer";
-    pauseTimerButton.style.cursor = "auto";
-  } else {
-    startTimer();
-  }
-}
-
-function pauseTimer1(){
-  if (!difference1){
-    // if timer never started, don't allow pause button to do anything
-  } else if (!paused1) {
-    clearInterval(tInterval1);
-    savedTime1 = difference1;
-    paused1 = 1;
-    running1 = 0;
-    timerDisplay1.style.background = "#A90000";
-    timerDisplay1.style.color = "#690000";
-    timerDisplay1.style.cursor = "pointer";
-    startTimerButton1.classList.remove('lighter');
-    pauseTimerButton1.classList.add('lighter');
-    startTimerButton1.style.cursor = "pointer";
-    pauseTimerButton1.style.cursor = "auto";
-  } else {
-    startTimer1();
-  }
-}
-
-function resetTimer(){
-  clearInterval(tInterval);
-  savedTime = 0;
-  difference = 0;
-  paused = 0;
-  running = 0;
-  timerDisplay.innerHTML = '3:00';
-  timerDisplay.style.background = "#A90000";
-  timerDisplay.style.color = "#fff";
-  timerDisplay.style.cursor = "pointer";
-  startTimerButton.classList.remove('lighter');
-  pauseTimerButton.classList.remove('lighter');
-  startTimerButton.style.cursor = "pointer";
-  pauseTimerButton.style.cursor = "auto";
-}
-
-function resetTimer1(){
-  clearInterval(tInterval1);
-  savedTime1 = 0;
-  difference1 = 0;
-  paused1 = 0;
-  running1 = 0;
-  timerDisplay1.innerHTML = '1:00';
-  timerDisplay1.style.background = "#A90000";
-  timerDisplay1.style.color = "#fff";
-  timerDisplay1.style.cursor = "pointer";
-  startTimerButton1.classList.remove('lighter');
-  pauseTimerButton1.classList.remove('lighter');
-  startTimerButton1.style.cursor = "pointer";
-  pauseTimerButton1.style.cursor = "auto";
-}
-   
 </script>   
 
 </head>
@@ -299,6 +172,6 @@ function resetTimer1(){
     <div class="timer1" onclick="startTimer1()">1:00</div>
     <div class="resetTimer1 reset1" onclick="resetTimer1()">Reset</div>
 </div>
-    
+  <script type="text/javascript" src="stopWatch.js"></script>
 </body>
 </html>
