@@ -8,8 +8,8 @@
             <title>Stopwatch and Counter for Fencing</title>
 
 <style>
-   f1a { color: blue; }
-   f2a { color: blue; }
+   f1a { color:blue; }
+   f2a { color:blue; }
  
     #timerContainer {
       max-width: 500px;
@@ -44,7 +44,29 @@
 <script type="text/javascript">
 
 const MaxPoints = 15; // 5,10,15,45 are typical for fencing.
+var startTimerButton = document.querySelector('.startTimer');
+var startTimerButton1 = document.querySelector('.startTimer1');
+var pauseTimerButton = document.querySelector('.pauseTimer');
+var pauseTimerButton1 = document.querySelector('.pauseTimer1');
+var timerDisplay = document.querySelector('.timer');
+var timerDisplay1 = document.querySelector('.timer1');
 
+var startTime;
+var startTime1;
+var updatedTime;
+var updatedTime1;
+var difference;
+var difference1;
+var tInterval;
+var tInterval1;
+var savedTime;
+var savedTime1;
+var paused = 0;
+var paused1 = 0;
+var running = 0;
+var running1 = 0;
+
+    
 function ClearAll() { 
     document.getElementById("S12").innerHTML="0";
     document.getElementById("S21").innerHTML="0";
@@ -137,28 +159,6 @@ function Double() {
     if ( n2==MaxPoints && n1==MaxPoints ) { GreenMinus(); RedMinus(); }  
 }
  
-var startTimerButton = document.querySelector('.startTimer');
-var startTimerButton1 = document.querySelector('.startTimer1');
-var pauseTimerButton = document.querySelector('.pauseTimer');
-var pauseTimerButton1 = document.querySelector('.pauseTimer1');
-var timerDisplay = document.querySelector('.timer');
-var timerDisplay1 = document.querySelector('.timer1');
-
-var startTime;
-var startTime1;
-var updatedTime;
-var updatedTime1;
-var difference;
-var difference1;
-var tInterval;
-var tInterval1;
-var savedTime;
-var savedTime1;
-var paused = 0;
-var paused1 = 0;
-var running = 0;
-var running1 = 0;
-
 function startTimer(){
   if(!running){
     startTime = new Date().getTime();
