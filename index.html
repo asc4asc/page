@@ -4,6 +4,8 @@
     		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
     		<!-- Bootstrap CSS -->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+            <title>Stopwatch and Counter for Fencing</title>
 
 <style>
 f1a { color: blue; }
@@ -12,7 +14,7 @@ f2a { color: blue; }
 
 <script type="text/javascript">
 
-const MaxPoints = 10; // 5,10,15,45 are typical for fencing.
+const MaxPoints = 15; // 5,10,15,45 are typical for fencing.
 
 function ClearAll() { 
     document.getElementById("S12").innerHTML="0";
@@ -127,6 +129,21 @@ function Double() {
 <button class="btn btn-primary" type="submit" onclick="EndBout()">- Z -</button>   
 <button class="btn btn-primary" type="submit" onclick="GreenPlus()">- + -</button>
 
-</center>   
+</center>
+    
+<div id="timerContainer">
+    <div class="timer" onclick="startTimer()">3:00</div>
+    <div class="startTimer reset" onclick="startTimer(); startTimer1()">
+      <i class="fas fa-play"></i>
+    </div>
+    <div class="pauseTimer reset" onclick="pauseTimer(); pauseTimer1()">
+      <i class="fas fa-pause"></i>
+    </div>
+    <div class="resetTimer reset" onclick="resetTimer(); resetTimer1()">Reset</div>
+    
+    <div class="timer1" onclick="startTimer1()">1:00</div>
+    <div class="resetTimer1 reset1" onclick="resetTimer1()">Reset</div>
+</div>
+  <script type="text/javascript" src="stopWatch.js"></script>
 </body>
 </html>
