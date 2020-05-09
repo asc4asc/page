@@ -1,5 +1,47 @@
 const MaxPoints = 15; // 5,10,15,45 are typical for fencing.
 
+function RedCPRed() {
+    var n=document.getElementById("c1pr").innerHTML;
+    n=n*1+1; 
+    document.getElementById("c1pr").innerHTML=n;
+}
+function YellowCPRed() {
+    var n=document.getElementById("c1py").innerHTML;
+    if ( n<1 ) { n=n*1+1; };
+    document.getElementById("c1py").innerHTML=n;
+}
+function RedCPGreen() {      
+    var n=document.getElementById("c2pr").innerHTML;
+    n=n*1+1; 
+    document.getElementById("c2pr").innerHTML=n;
+}
+function YellowCPGreen() {     
+    var n=document.getElementById("c2py").innerHTML;
+    if ( n<1 ) { n=n*1+1; };
+    document.getElementById("c2py").innerHTML=n;
+}
+
+function RedCRed() {
+    var n=document.getElementById("c1r").innerHTML;
+    n=n*1+1; 
+    document.getElementById("c1r").innerHTML=n;
+}
+function YellowCRed() {
+    var n=document.getElementById("c1y").innerHTML;
+    if ( n<1 ) { n=n*1+1; };
+    document.getElementById("c1y").innerHTML=n;
+}
+function RedCGreen() {      
+    var n=document.getElementById("c2r").innerHTML;
+    n=n*1+1; 
+    document.getElementById("c2r").innerHTML=n;
+}
+function YellowCGreen() {     
+    var n=document.getElementById("c2y").innerHTML;
+    if ( n<1 ) { n=n*1+1; };
+    document.getElementById("c2y").innerHTML=n;
+}
+
 function ClearAll() { 
     document.getElementById("S12").innerHTML="0";
     document.getElementById("S21").innerHTML="0";
@@ -99,25 +141,5 @@ function Double() {
     }  
 }
 
-function RedCRed() {
-    var n=document.getElementById("c1r").innerHTML;
-    n=n*1+1; 
-    document.getElementById("c1r").innerHTML=n;
-}
-function YellowCRed() {
-    var n=document.getElementById("c1y").innerHTML;
-    if ( n<1 ) { n=n*1+1; };
-    document.getElementById("c1y").innerHTML=n;
-}
-function RedCGreen() {      
-    var n=document.getElementById("c2r").innerHTML;
-    n=n*1+1; 
-    document.getElementById("c2r").innerHTML=n;
-}
-function YellowCGreen() {     
-    var n=document.getElementById("c2y").innerHTML;
-    if ( n<1 ) { n=n*1+1; };
-    document.getElementById("c2y").innerHTML=n;
-}
 
 
