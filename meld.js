@@ -89,13 +89,16 @@ function Double() {
     document.getElementById("S12a").innerHTML=n2;
     if ( n1==MaxPoints && n2<MaxPoints ) { EndBout(); };
     if ( n2==MaxPoints && n1<MaxPoints ) { EndBout(); };
-    if ( n2==MaxPoints && n1==MaxPoints ) { GreenMinus(); RedMinus(); }  
+    if ( n2==MaxPoints && n1==MaxPoints ) { 
+      GreenMinus(); 
+      RedMinus(); 
+    }  
 }
 
 function RedCRed() {
-    var n=document.getElementById("c1y").innerHTML;
+    var n=document.getElementById("c1r").innerHTML;
     n=n*1+1; 
-    document.getElementById("c1y").innerHTML=n;
+    document.getElementById("c1r").innerHTML=n;
 }
 function YellowCRed() {
     var n=document.getElementById("c1r").innerHTML;
@@ -103,14 +106,14 @@ function YellowCRed() {
     document.getElementById("c1r").innerHTML=n;
 }
 function RedCGreen() {      
-    var n=document.getElementById("c2y").innerHTML;
+    var n=document.getElementById("c2r").innerHTML;
     n=n*1+1; 
-    document.getElementById("c2y").innerHTML=n;
+    document.getElementById("c2r").innerHTML=n;
 }
 function YellowCGreen() {     
-    var n=document.getElementById("c1y").innerHTML;
+    var n=document.getElementById("c2y").innerHTML;
     if ( n<2 ) { n=n*1+1; };
-    document.getElementById("c1y").innerHTML=n;
+    document.getElementById("c2y").innerHTML=n;
 }
 
 
