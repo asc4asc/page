@@ -59,6 +59,7 @@ function ClearAll() {
     document.getElementById("S21").innerHTML="0";
     document.getElementById("S12a").innerHTML="0";
     document.getElementById("S21a").innerHTML="0";
+    
     document.getElementById("c1y").innerHTML="0";
     document.getElementById("c1r").innerHTML="0";
     document.getElementById("c2y").innerHTML="0";
@@ -76,6 +77,17 @@ function ClearAll() {
 function ClearNull() { 
     document.getElementById("S12").innerHTML="0";
     document.getElementById("S21").innerHTML="0";
+    document.getElementById("c1y").innerHTML="0";
+    document.getElementById("c1r").innerHTML="0";
+    document.getElementById("c2y").innerHTML="0";
+    document.getElementById("c2r").innerHTML="0"; 
+    
+    document.getElementById("c1py").innerHTML="0";
+    document.getElementById("c1pr").innerHTML="0";
+    document.getElementById("c2py").innerHTML="0";
+    document.getElementById("c2pr").innerHTML="0"; 
+    document.getElementById("c1pb").innerHTML="0";
+    document.getElementById("c2pb").innerHTML="0";
 }     
     
 function RedPlus() {
