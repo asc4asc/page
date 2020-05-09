@@ -6,7 +6,6 @@ function RedCPRed() {
       { n=n*1+1; } 
     else 
       { BlackCPGreen(); } 
-    };
     document.getElementById("c1pr").innerHTML=n;
     GreenPlus();
 }
@@ -26,7 +25,6 @@ function RedCPGreen() {
       { n=n*1+1; } 
     else 
       { BlackCPGreen(); } 
-    };  
     document.getElementById("c2pr").innerHTML=n;
     RedPlus();
 }
