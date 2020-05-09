@@ -25,6 +25,7 @@ var savedTime1;
 var savedTime2;
 var paused = 0;
 var paused1 = 0;
+var paused2 = 0;
 var running = 0;
 var running1 = 0;
 var running2 = 0;
