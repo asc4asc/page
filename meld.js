@@ -10,16 +10,28 @@ function YellowCPRed() {
     if ( n<1 ) { n=n*1+1; };
     document.getElementById("c1py").innerHTML=n;
 }
+function BlackCPRed() {
+    var n=document.getElementById("c1pb").innerHTML;
+    if ( n<1 ) { n=n*1+1; };
+    document.getElementById("c1py").innerHTML=n;
+}
 function RedCPGreen() {      
     var n=document.getElementById("c2pr").innerHTML;
-    n=n*1+1; 
+    if ( n<2 ) { n=n*1+1; };  
     document.getElementById("c2pr").innerHTML=n;
 }
 function YellowCPGreen() {     
     var n=document.getElementById("c2py").innerHTML;
-    if ( n<1 ) { n=n*1+1; };
+    if ( n<2 ) { n=n*1+1; };  
     document.getElementById("c2py").innerHTML=n;
 }
+function BlakCPGreen() {
+    var n=document.getElementById("c2pb").innerHTML;
+    if ( n<1 ) { n=n*1+1; };
+    document.getElementById("c1py").innerHTML=n;
+}
+
+
 
 function RedCRed() {
     var n=document.getElementById("c1r").innerHTML;
