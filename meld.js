@@ -101,9 +101,9 @@ function RedCRed() {
     document.getElementById("c1r").innerHTML=n;
 }
 function YellowCRed() {
-    var n=document.getElementById("c1r").innerHTML;
-    if ( n<2 ) { n=n*1+1; };
-    document.getElementById("c1r").innerHTML=n;
+    var n=document.getElementById("c1y").innerHTML;
+    if ( n<1 ) { n=n*1+1; };
+    document.getElementById("c1y").innerHTML=n;
 }
 function RedCGreen() {      
     var n=document.getElementById("c2r").innerHTML;
@@ -112,7 +112,7 @@ function RedCGreen() {
 }
 function YellowCGreen() {     
     var n=document.getElementById("c2y").innerHTML;
-    if ( n<2 ) { n=n*1+1; };
+    if ( n<1 ) { n=n*1+1; };
     document.getElementById("c2y").innerHTML=n;
 }
 
