@@ -24,7 +24,8 @@
 
 @media only screen and (max-width: 600px) {
    body { background-color: lightblue; }   
-   mydiv { display: none !important; } 
+   IfSmallNotNeed { display: none !important; } 
+   IfSmallDoBreak{ display: block !important; }
 }
 </style>
 
@@ -32,20 +33,20 @@
 <body>
 <center>    
 <h2>DA to 15 Points/Epee</h2>      
-<mydiv>    
+<IfSmallNotNeed>    
 <button class="btn btn-primary" type="submit" onclick="RedCRed()">RC</button>        
 <button class="btn btn-primary" type="submit" onclick="YellowCRed()">YC</button>
-</mydiv>    
+<IfSmallNotNeed>    
 <button class="btn btn-primary" type="submit" onclick="RedV()">V</button>        
 <button class="btn btn-primary" type="submit" onclick="RedMinus()">-</button>
 <button class="btn btn-primary" type="submit" onclick="ClearAll()">C</button>
 <button class="btn btn-primary" type="submit" onclick="ClearNull()">C1</button>
 <button class="btn btn-primary" type="submit" onclick="GreenMinus()">-</button>
 <button class="btn btn-primary" type="submit" onclick="GreenV()">V</button>   
-<mydiv>
+<IfSmallNotNeed> 
 <button class="btn btn-primary" type="submit" onclick="YellowCGreen()">YC</button>
 <button class="btn btn-primary" type="submit" onclick="RedCGreen()">RC</button> 
-</mydiv>    
+</IfSmallNotNeed>    
 <p>    
 <h1> <center>
   <font color="red">RED</font> 
@@ -66,10 +67,12 @@
 <button class="btn btn-primary pauseTimer reset" onclick="pauseTimer(); pauseTimer1()">
   <i class="fas fa-pause"></i>
 </button>
+<IfSmallDoBreak>    
 <button class="btn btn-primary resetTimer reset" onclick="resetTimer(); resetTimer1()">Reset</button>
 <button class="btn btn-primary timer1" onclick="startTimer1()">1:00</button>
 <button class="btn btn-primary resetTimer1 reset1" onclick="resetTimer1()">Reset</button>
 <button class="btn btn-primary" type="submit" onclick="PCard()">PC</button>   
+</IfSmallDoBreak> 
 <p>
 <c1pb id="c1pb">0</c1pb> <c1pr id="c1pr">0</c1pr> <c1py id="c1py">0</c1py>  
 P
