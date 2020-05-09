@@ -77,7 +77,14 @@ function RedCRed() {
 }
 function YellowCRed() {
     var n=document.getElementById("c1y").innerHTML;
-    if ( n<1 ) { n=n*1+1; };
+    if ( n<1 ) 
+    { 
+      n=n*1+1;
+    }
+    else
+    {
+      RedCRed(); 
+    };
     document.getElementById("c1y").innerHTML=n;
 }
 function RedCGreen() {      
@@ -88,7 +95,14 @@ function RedCGreen() {
 }
 function YellowCGreen() {     
     var n=document.getElementById("c2y").innerHTML;
-    if ( n<1 ) { n=n*1+1; };
+    if ( n<1 ) 
+    { 
+      n=n*1+1;
+    }
+    else
+    {
+      RedCGreen(); 
+    };
     document.getElementById("c2y").innerHTML=n;
 }
 
