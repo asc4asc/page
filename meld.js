@@ -93,22 +93,22 @@ function Double() {
 }
 
 function RedCRed() {
-    var c=document.getElementById("c1y").innerHTML;
+    var n=document.getElementById("c1y").innerHTML;
     n1=n1*1+1; 
     document.getElementById("c1y").innerHTML=c;
 }
 function YellowCRed() {
-    var c=document.getElementById("c1r").innerHTML;
+    var n=document.getElementById("c1r").innerHTML;
     if ( n1<2 ) { n1=n1*1+1; };
     document.getElementById("c1r").innerHTML=c;
 }
 function RedCGreen() {      
-    var c=document.getElementById("c2y").innerHTML;
+    var n=document.getElementById("c2y").innerHTML;
     n1=n1*1+1; 
     document.getElementById("c2y").innerHTML=c;
 }
 function YellowCGreen() {     
-    var c=document.getElementById("c1y").innerHTML;
+    var n=document.getElementById("c1y").innerHTML;
     if ( n1<2 ) { n1=n1*1+1; };
     document.getElementById("c1y").innerHTML=c;
 }
