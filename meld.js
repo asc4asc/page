@@ -31,7 +31,7 @@ function YellowCPRed() {
     {
       RedCPRed();  
     }
-    document.getElementById("c1py").innerHTML=n;
+    document.getElementById("c1py").innerHTML='<font color="blue">'+n+'</font>';  
 }
 function BlackCPRed() {
     var n=document.getElementById("c1pb").innerHTML;
