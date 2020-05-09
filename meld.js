@@ -1,5 +1,10 @@
 const MaxPoints = 15; // 5,10,15,45 are typical for fencing.
 
+function PCard() {
+    YellowCPRed()
+    RedCPRed()  
+}
+
 function RedCPRed() {
     var n=document.getElementById("c1pr").innerHTML;
     if ( n<2 ) 
