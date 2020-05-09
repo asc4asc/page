@@ -8,7 +8,7 @@ function RedCPRed() {
     } 
     else
     { 
-      BlackCPGreen(); 
+      BlackCPRed(); 
     } 
     document.getElementById("c1pr").innerHTML=n;
     GreenPlus();
