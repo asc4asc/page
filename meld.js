@@ -234,5 +234,5 @@ function Double() {
         GreenMinus(); 
         RedMinus(); 
       }  
-    }
+   }
 }
