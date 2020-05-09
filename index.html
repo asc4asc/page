@@ -23,8 +23,8 @@
    c2pb { color: black; }  
 
 @media only screen and (max-width: 600px) {
-   body { background-color: lightblue; }
-   mysmall { }    
+   body { background-color: lightblue; }   
+   mydiv { display: block; } 
 }
 </style>
 
@@ -32,20 +32,20 @@
 <body>
 <center>    
 <h2>DA to 15 Points/Epee</h2>      
-<div>    
+<mydiv>    
 <button class="btn btn-primary" type="submit" onclick="RedCRed()">RC</button>        
 <button class="btn btn-primary" type="submit" onclick="YellowCRed()">YC</button>
-</div>    
+</mydiv>    
 <button class="btn btn-primary" type="submit" onclick="RedV()">V</button>        
 <button class="btn btn-primary" type="submit" onclick="RedMinus()">-</button>
 <button class="btn btn-primary" type="submit" onclick="ClearAll()">C</button>
 <button class="btn btn-primary" type="submit" onclick="ClearNull()">C1</button>
 <button class="btn btn-primary" type="submit" onclick="GreenMinus()">-</button>
 <button class="btn btn-primary" type="submit" onclick="GreenV()">V</button>   
-<div>
+<mydiv>
 <button class="btn btn-primary" type="submit" onclick="YellowCGreen()">YC</button>
 <button class="btn btn-primary" type="submit" onclick="RedCGreen()">RC</button> 
-</div>    
+</mydiv>    
 <p>    
 <h1> <center>
   <font color="red">RED</font> 
