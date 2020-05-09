@@ -65,7 +65,7 @@ function startTimer1(){
 function startTimer2(){
   if(!running2){
     startTime2 = new Date().getTime();
-    tInterval2 = setInterval(getShowTime1, 1);
+    tInterval2 = setInterval(getShowTime2, 1);
     paused2 = 0;
     running2 = 1;
     timerDisplay2.style.background = "#FF0000";
