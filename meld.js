@@ -25,7 +25,7 @@ function YellowCPGreen() {
     if ( n<2 ) { n=n*1+1; };  
     document.getElementById("c2py").innerHTML=n;
 }
-function BlakCPGreen() {
+function BlackCPGreen() {
     var n=document.getElementById("c2pb").innerHTML;
     if ( n<1 ) { n=n*1+1; };
     document.getElementById("c1py").innerHTML=n;
