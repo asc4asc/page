@@ -13,7 +13,7 @@ function YellowCPRed() {
 function BlackCPRed() {
     var n=document.getElementById("c1pb").innerHTML;
     if ( n<1 ) { n=n*1+1; };
-    document.getElementById("c1py").innerHTML=n;
+    document.getElementById("c1pb").innerHTML=n;
 }
 function RedCPGreen() {      
     var n=document.getElementById("c2pr").innerHTML;
@@ -28,7 +28,7 @@ function YellowCPGreen() {
 function BlackCPGreen() {
     var n=document.getElementById("c2pb").innerHTML;
     if ( n<1 ) { n=n*1+1; };
-    document.getElementById("c1py").innerHTML=n;
+    document.getElementById("c2pb").innerHTML=n;
 }
 
 function RedCRed() {
