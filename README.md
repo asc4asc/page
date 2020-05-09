@@ -1,6 +1,6 @@
 Ein weiters einfaches Beispiel für die TRP!
 
-Ein einzelnes Gefecht auf z.B auf 15 Punkte!
+Ein einzelnes Gefecht DA auf z.B auf 15 Punkte!
 
 Hier jetzt erstmal so das man es gut testen kann.
 
@@ -11,5 +11,3 @@ Wobei die Namen u.s.w. noch sprechend aufbereitet werden sollten.
 Javascript code muss noch bereinigt werden. 
 
 Button ohne Sinn auf inaktiv wäre nicht schlecht! 
-
-HTML pure. 
