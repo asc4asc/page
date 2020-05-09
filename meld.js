@@ -31,8 +31,6 @@ function BlackCPGreen() {
     document.getElementById("c1py").innerHTML=n;
 }
 
-
-
 function RedCRed() {
     var n=document.getElementById("c1r").innerHTML;
     n=n*1+1; 
@@ -154,6 +152,3 @@ function Double() {
       RedMinus(); 
     }  
 }
-
-
-
