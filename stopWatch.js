@@ -1,24 +1,33 @@
 var startTimerButton = document.querySelector('.startTimer');
 var startTimerButton1 = document.querySelector('.startTimer1');
+var startTimerButton2 = document.querySelector('.startTimer2');
 var pauseTimerButton = document.querySelector('.pauseTimer');
 var pauseTimerButton1 = document.querySelector('.pauseTimer1');
+var pauseTimerButton2 = document.querySelector('.pauseTimer2');
 var timerDisplay = document.querySelector('.timer');
 var timerDisplay1 = document.querySelector('.timer1');
+var timerDisplay2 = document.querySelector('.timer2');
 
 var startTime;
 var startTime1;
+var startTime2;
 var updatedTime;
 var updatedTime1;
+var updatedTime2;
 var difference;
 var difference1;
+var difference2;
 var tInterval;
 var tInterval1;
+var tInterval2;
 var savedTime;
 var savedTime1;
+var savedTime2;
 var paused = 0;
 var paused1 = 0;
 var running = 0;
 var running1 = 0;
+var running2 = 0;
 
 function startTimer(){
   if(!running){
@@ -49,6 +58,22 @@ function startTimer1(){
     pauseTimerButton1.classList.remove('lighter');
     startTimerButton1.style.cursor = "auto";
     pauseTimerButton1.style.cursor = "pointer";
+  }
+}
+
+function startTimer2(){
+  if(!running2){
+    startTime2 = new Date().getTime();
+    tInterval2 = setInterval(getShowTime1, 1);
+    paused2 = 0;
+    running2 = 1;
+    timerDisplay2.style.background = "#FF0000";
+    timerDisplay2.style.cursor = "auto";
+    timerDisplay2.style.color = "yellow";
+    startTimerButton2.classList.add('lighter');
+    pauseTimerButton2.classList.remove('lighter');
+    startTimerButton2.style.cursor = "auto";
+    pauseTimerButton2.style.cursor = "pointer";
   }
 }
 
@@ -92,6 +117,28 @@ function pauseTimer1(){
   }
 }
 
+function pauseTimer2(){
+  if (!difference2){
+    // if timer never started, don't allow pause button to do anything
+  } else if (!paused2) {
+    clearInterval(tInterval2);
+    savedTime2 = difference2;
+    paused2 = 1;
+    running2 = 0;
+    timerDisplay2.style.background = "#A90000";
+    timerDisplay2.style.color = "#690000";
+    timerDisplay2.style.cursor = "pointer";
+    startTimerButton2.classList.remove('lighter');
+    pauseTimerButton2.classList.add('lighter');
+    startTimerButton2.style.cursor = "pointer";
+    pauseTimerButton2.style.cursor = "auto";
+  } else {
+    startTimer2();
+  }
+}
+
+
+
 function resetTimer(){
   clearInterval(tInterval);
   savedTime = 0;
@@ -124,7 +171,21 @@ function resetTimer1(){
   pauseTimerButton1.style.cursor = "auto";
 }
 
-
+function resetTimer2(){
+  clearInterval(tInterval2);
+  savedTime2 = 0;
+  difference2 = 0;
+  paused2 = 0;
+  running2 = 0;
+  timerDisplay2.innerHTML = '1:00';
+  timerDisplay2.style.background = "#A90000";
+  timerDisplay2.style.color = "#fff";
+  timerDisplay2.style.cursor = "pointer";
+  startTimerButton2.classList.remove('lighter');
+  pauseTimerButton2.classList.remove('lighter');
+  startTimerButton2.style.cursor = "pointer";
+  pauseTimerButton2.style.cursor = "auto";
+}
 
 function getShowTime(){
   updatedTime = new Date().getTime();
@@ -166,3 +227,22 @@ function getShowTime1(){
   seconds1 = (seconds1 < 10) ? "0" + seconds1 : seconds1;
   timerDisplay1.innerHTML = minutes1 + ':' + seconds1;
 }
+
+function getShowTime2(){
+  updatedTime2 = new Date().getTime();
+  if (savedTime2){
+    difference2 = (updatedTime2 - startTime2) + savedTime2;
+  } else {
+    difference2 =  updatedTime2 - startTime2;
+  }
+  var minutes2 = Math.floor((difference2 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds2 = Math.floor((difference2 % (1000 * 60)) / 1000);
+  var milliseconds2 = Math.floor((difference2 % (100 * 60)));
+  
+  if (minutes2 > 0) { pauseTimer2(); };
+  minutes2 = 0;
+  seconds2 = 59-1*seconds2;
+  seconds2 = (seconds2 < 10) ? "0" + seconds2 : seconds2;
+  timerDisplay2.innerHTML = minutes2 + ':' + seconds2;
+}
+
