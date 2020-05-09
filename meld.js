@@ -5,6 +5,10 @@ function ClearAll() {
     document.getElementById("S21").innerHTML="0";
     document.getElementById("S12a").innerHTML="0";
     document.getElementById("S21a").innerHTML="0";
+    document.getElementById("c1y").innerHTML="0";
+    document.getElementById("c1r").innerHTML="0";
+    document.getElementById("c2y").innerHTML="0";
+    document.getElementById("c2r").innerHTML="0";    
 } 
 
 function ClearNull() { 
