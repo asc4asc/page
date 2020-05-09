@@ -212,8 +212,8 @@ function EndBout() {
     };
     document.getElementById("S21a").innerHTML=n1;
     document.getElementById("S12a").innerHTML=n2;
-    document.getElementById("S21").innerHTML[0]=e1;
-    document.getElementById("S12").innerHTML[0]=e2;
+    document.getElementById("S21").innerHTML=e1;
+    document.getElementById("S12").innerHTML=e2;
 }
     
 function Double() {
