@@ -17,7 +17,7 @@ function RedCPRed() {
     { 
       BlackCPRed(); 
     } 
-    document.getElementById("c1pr").innerHTML="n";
+    document.getElementById("c1pr").innerHTML=n;
     GreenPlus();
 }
 
@@ -31,12 +31,12 @@ function YellowCPRed() {
     {
       RedCPRed();  
     }
-    document.getElementById("c1py").innerHTML="n";  
+    document.getElementById("c1py").innerHTML=n;  
 }
 function BlackCPRed() {
     var n=document.getElementById("c1pb").innerHTML;
     if ( n<1 ) { n=n*1+1; };
-    document.getElementById("c1pb").innerHTML="n";
+    document.getElementById("c1pb").innerHTML=n;
 }
 function RedCPGreen() {      
     var n=document.getElementById("c2pr").innerHTML;
@@ -48,7 +48,7 @@ function RedCPGreen() {
     { 
       BlackCPGreen(); 
     } 
-    document.getElementById("c2pr").innerHTML="n";
+    document.getElementById("c2pr").innerHTML=n;
     RedPlus();
 }
 function YellowCPGreen() {     
@@ -61,12 +61,12 @@ function YellowCPGreen() {
     {
       RedCPGreen();  
     }
-    document.getElementById("c2py").innerHTML="n";
+    document.getElementById("c2py").innerHTML=n;
 }
 function BlackCPGreen() {
     var n=document.getElementById("c2pb").innerHTML;
     if ( n<1 ) { n=n*1+1; };
-    document.getElementById("c2pb").innerHTML="n";
+    document.getElementById("c2pb").innerHTML=n;
 }
 
 function RedCRed() {
