@@ -107,8 +107,8 @@ function YellowCGreen() {
 }
 
 function ClearAll() { 
-    document.getElementById("S12").innerHTML="0";
-    document.getElementById("S21").innerHTML="0";
+    document.getElementById("S12").innerHTML=" ";
+    document.getElementById("S21").innerHTML=" ";
     document.getElementById("S12a").innerHTML="0";
     document.getElementById("S21a").innerHTML="0";
     
@@ -127,8 +127,8 @@ function ClearAll() {
 } 
 
 function ClearNull() { 
-    document.getElementById("S12").innerHTML="0";
-    document.getElementById("S21").innerHTML="0";
+    document.getElementById("S12").innerHTML=" ";
+    document.getElementById("S21").innerHTML=" ";
     document.getElementById("c1y").innerHTML="0";
     document.getElementById("c1r").innerHTML="0";
     document.getElementById("c2y").innerHTML="0";
