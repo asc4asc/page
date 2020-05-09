@@ -37,6 +37,7 @@ function RedCRed() {
     var n=document.getElementById("c1r").innerHTML;
     n=n*1+1; 
     document.getElementById("c1r").innerHTML=n;
+    GreenPlus();
 }
 function YellowCRed() {
     var n=document.getElementById("c1y").innerHTML;
@@ -47,6 +48,7 @@ function RedCGreen() {
     var n=document.getElementById("c2r").innerHTML;
     n=n*1+1; 
     document.getElementById("c2r").innerHTML=n;
+    RedPlus();
 }
 function YellowCGreen() {     
     var n=document.getElementById("c2y").innerHTML;
