@@ -210,10 +210,10 @@ function EndBout() {
       if (e1=="A") { e1="V"; e2="D" }
       if (e2=="A") { e2="V"; e1="D" } 
     };
-    document.getElementById("S21").innerHTML=e1;
-    document.getElementById("S12").innerHTML=e2;
     document.getElementById("S21a").innerHTML=n1;
     document.getElementById("S12a").innerHTML=n2;
+    document.getElementById("S21").innerHTML[0]=e1;
+    document.getElementById("S12").innerHTML[0]=e2;
 }
     
 function Double() {
