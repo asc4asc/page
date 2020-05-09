@@ -31,6 +31,15 @@
        margin: 1em;
     }
 }
+    
+.icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+    
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
 <symbol id="icon-fechter" viewBox="0 0 150 190">
 <title>open</title>
@@ -74,12 +83,16 @@
 </IfSmallNotNeed>    
 <p>    
 <h1> <center>
+  <ul class="icons">  
   <li><svg><use xlink:href="#icon-fechter"></use></svg></li>
+  </ul> 
   <font color="red">RED</font> 
   <f1 id="S12"> </f1><f1a id="S12a">0</f1a> 
   <f2 id="S21"> </f2><f2a id="S21a">0</f2a> 
-  <font color="green">GRE</font> 
-  <li><svg><use xlink:href="#icon-fechter-m"></use></svg></li>  
+  <font color="green">GRE</font>
+  <ul class="icons">    
+  <li><svg><use xlink:href="#icon-fechter-m"></use></svg></li> 
+  </ul>   
 </center> </h1>
 <p>  
 <button class="btn btn-primary" type="submit" onclick="RedPlus()">- + -</button>
