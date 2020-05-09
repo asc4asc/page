@@ -95,22 +95,22 @@ function Double() {
 function RedCRed() {
     var n=document.getElementById("c1y").innerHTML;
     n1=n1*1+1; 
-    document.getElementById("c1y").innerHTML=c;
+    document.getElementById("c1y").innerHTML=n;
 }
 function YellowCRed() {
     var n=document.getElementById("c1r").innerHTML;
     if ( n1<2 ) { n1=n1*1+1; };
-    document.getElementById("c1r").innerHTML=c;
+    document.getElementById("c1r").innerHTML=n;
 }
 function RedCGreen() {      
     var n=document.getElementById("c2y").innerHTML;
     n1=n1*1+1; 
-    document.getElementById("c2y").innerHTML=c;
+    document.getElementById("c2y").innerHTML=n;
 }
 function YellowCGreen() {     
     var n=document.getElementById("c1y").innerHTML;
     if ( n1<2 ) { n1=n1*1+1; };
-    document.getElementById("c1y").innerHTML=c;
+    document.getElementById("c1y").innerHTML=n;
 }
 
 
