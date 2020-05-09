@@ -2,7 +2,7 @@ const MaxPoints = 15; // 5,10,15,45 are typical for fencing.
 
 function RedCPRed() {
     var n=document.getElementById("c1pr").innerHTML;
-    n=n*1+1; 
+    if ( n<2 ) { n=n*1+1; };
     document.getElementById("c1pr").innerHTML=n;
 }
 function YellowCPRed() {
