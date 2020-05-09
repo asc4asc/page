@@ -2,7 +2,7 @@ const MaxPoints = 15; // 5,10,15,45 are typical for fencing.
 
 function AddAbschnitt() {
     var n=document.getElementById("ab").innerHTML;
-    if ( n<2 ) 
+    if ( n<3 ) 
     { 
       n=n*1+1; 
     } 
