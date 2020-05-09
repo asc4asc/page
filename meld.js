@@ -42,7 +42,7 @@ function RedCPGreen() {
       BlackCPGreen(); 
     } 
     document.getElementById("c2pr").innerHTML=n;
-    RedPlus();
+    GreenPlus();
 }
 function YellowCPGreen() {     
     var n=document.getElementById("c2py").innerHTML;
@@ -52,7 +52,7 @@ function YellowCPGreen() {
     }
     else 
     {
-      RedCPRed();  
+      RedCPGreen();  
     }
     document.getElementById("c2py").innerHTML=n;
 }
