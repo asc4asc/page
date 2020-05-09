@@ -17,7 +17,7 @@ function RedCPRed() {
     { 
       BlackCPRed(); 
     } 
-    document.getElementById("c1pr").innerHTML=n;
+    document.getElementById("c1pr").innerHTML='<font color="red">'+n+'</font>';
     GreenPlus();
 }
 
@@ -31,12 +31,12 @@ function YellowCPRed() {
     {
       RedCPRed();  
     }
-    document.getElementById("c1py").innerHTML='<font color="blue">'+n+'</font>';  
+    document.getElementById("c1py").innerHTML='<font color="yellow">'+n+'</font>';  
 }
 function BlackCPRed() {
     var n=document.getElementById("c1pb").innerHTML;
     if ( n<1 ) { n=n*1+1; };
-    document.getElementById("c1pb").innerHTML=n;
+    document.getElementById("c1pb").innerHTML='<font color="black">'+n+'</font>';
 }
 function RedCPGreen() {      
     var n=document.getElementById("c2pr").innerHTML;
@@ -48,7 +48,7 @@ function RedCPGreen() {
     { 
       BlackCPGreen(); 
     } 
-    document.getElementById("c2pr").innerHTML=n;
+    document.getElementById("c2pr").innerHTML='<font color="red">'+n+'</font>';
     RedPlus();
 }
 function YellowCPGreen() {     
@@ -61,12 +61,12 @@ function YellowCPGreen() {
     {
       RedCPGreen();  
     }
-    document.getElementById("c2py").innerHTML=n;
+    document.getElementById("c2py").innerHTML='<font color="yellow">'+n+'</font>';
 }
 function BlackCPGreen() {
     var n=document.getElementById("c2pb").innerHTML;
     if ( n<1 ) { n=n*1+1; };
-    document.getElementById("c2pb").innerHTML=n;
+    document.getElementById("c2pb").innerHTML='<font color="black">'+n+'</font>';
 }
 
 function RedCRed() {
