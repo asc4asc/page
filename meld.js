@@ -3,15 +3,27 @@ const MaxPoints = 15; // 5,10,15,45 are typical for fencing.
 function RedCPRed() {
     var n=document.getElementById("c1pr").innerHTML;
     if ( n<2 ) 
-      { n=n*1+1; } 
-    else 
-      { BlackCPGreen(); } 
+    { 
+      n=n*1+1; 
+    } 
+    else
+    { 
+      BlackCPGreen(); 
+    } 
     document.getElementById("c1pr").innerHTML=n;
     GreenPlus();
 }
+
 function YellowCPRed() {
     var n=document.getElementById("c1py").innerHTML;
-    if ( n<1 ) { n=n*1+1; };
+    if ( n<1 ) 
+    { 
+      n=n*1+1; 
+    }
+    else 
+    {
+      RedCPRed();  
+    }
     document.getElementById("c1py").innerHTML=n;
 }
 function BlackCPRed() {
@@ -22,15 +34,26 @@ function BlackCPRed() {
 function RedCPGreen() {      
     var n=document.getElementById("c2pr").innerHTML;
     if ( n<2 ) 
-      { n=n*1+1; } 
+    { 
+      n=n*1+1; 
+    } 
     else 
-      { BlackCPGreen(); } 
+    { 
+      BlackCPGreen(); 
+    } 
     document.getElementById("c2pr").innerHTML=n;
     RedPlus();
 }
 function YellowCPGreen() {     
     var n=document.getElementById("c2py").innerHTML;
-    if ( n<2 ) { n=n*1+1; };  
+    if ( n<1 ) 
+    { 
+      n=n*1+1; 
+    }
+    else 
+    {
+      RedCPRed();  
+    }
     document.getElementById("c2py").innerHTML=n;
 }
 function BlackCPGreen() {
