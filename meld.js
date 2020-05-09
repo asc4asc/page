@@ -133,7 +133,7 @@ function ClearAll() {
     document.getElementById("c2pr").innerHTML="0"; 
     document.getElementById("c1pb").innerHTML="0";
     document.getElementById("c2pb").innerHTML="0";
-
+    document.getElementById("ab").innerHTML="1";
 } 
 
 function ClearNull() { 
