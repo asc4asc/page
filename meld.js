@@ -202,11 +202,11 @@ function EndBout() {
     var e2=document.getElementById("S12").innerHTML[0];
     var n1=document.getElementById("S21a").innerHTML;
     var n2=document.getElementById("S12a").innerHTML;
-    if ( n1==MaxPoints ) { e1="V"; e2="D" };
-    if ( n2==MaxPoints ) { e2="V"; e1="D" };
-    if ( n1>n2 ) { e1="V"; e2="D" };
-    if ( n1<n2 ) { e2="V"; e1="D" };
-    if ( n1==n2 ) {
+    if ( n1==1*MaxPoints ) { e1="V"; e2="D" };
+    if ( n2==1*MaxPoints ) { e2="V"; e1="D" };
+    if ( n1*1>n2*1 ) { e1="V"; e2="D" };
+    if ( n1*1<n2*1 ) { e2="V"; e1="D" };
+    if ( n1*1==n2*1 ) {
       if (e1=="A") { e1="V"; e2="D" }
       if (e2=="A") { e2="V"; e1="D" } 
     };
@@ -226,15 +226,15 @@ function Double() {
     } 
     else
     {
-      if ( n1<MaxPoints ) { n1=n1*1+1; };
-      if ( n2<MaxPoints ) { n2=n2*1+1; };
+      if ( n1*1<MaxPoints ) { n1=n1*1+1; };
+      if ( n2*1<MaxPoints ) { n2=n2*1+1; };
       document.getElementById("S21").innerHTML=e1;
       document.getElementById("S12").innerHTML=e2;
       document.getElementById("S21a").innerHTML=n1;
       document.getElementById("S12a").innerHTML=n2;
-      if ( n1==MaxPoints && n2<MaxPoints ) { EndBout(); };
-      if ( n2==MaxPoints && n1<MaxPoints ) { EndBout(); };
-      if ( n2==MaxPoints && n1==MaxPoints ) { 
+      if ( n1*1==MaxPoints*1 && n2*1<MaxPoints*1 ) { EndBout(); };
+      if ( n2*1==MaxPoints*1 && n1*1<MaxPoints*1 ) { EndBout(); };
+      if ( n2*1==MaxPoints*1 && n1*1==MaxPoints*1 ) { 
         GreenMinus(); 
         RedMinus(); 
       }  
