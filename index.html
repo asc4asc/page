@@ -25,13 +25,13 @@
 var myVar = setInterval(myTimer ,100);
 
 function myTimer() {
-  var d = new Date();
-  // var d = new Date().getTime();
+  // var d = new Date();
+  var d = new Date().getTime();
  
   demo.style.background = "#FF0000";
   demo.style.cursor = "auto";
   demo.style.color = "yellow";
-  document.getElementById("demo").innerHTML = d.toLocaleTimeString(); new Date().getTime();
+  document.getElementById("demo").innerHTML = d;
 }
 </script>  
 
