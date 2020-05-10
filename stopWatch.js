@@ -68,7 +68,6 @@ function startTimer2(){
     tInterval2 = setInterval(getShowTime2, 1);
     paused2 = 0;
     running2 = 1;
-    timerDisplay2.style.background = "#FF0000";
     timerDisplay2.style.cursor = "auto";
     timerDisplay2.style.color = "yellow";
     startTimerButton2.classList.add('lighter');
