@@ -37,7 +37,7 @@ function myTimer() {
 
   var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((difference % (1000 * 60)) / 1000);
-  var milliseconds = Math.floor((difference % (1000 * 60)) / 100);
+  var milliseconds = Math.floor(difference % (1000 * 60));
   // if (minutes >2 ) { pauseTimer(); pauseTimer1(); };
   minutes = 59-1*minutes; 
   minutes = (minutes < 10) ?  minutes : minutes;
@@ -48,7 +48,7 @@ function myTimer() {
   // demo.innerHTML = minutes + ':' + seconds; // + ':' + milliseconds;
   demo.style.background = "#FF0000";
   demo.style.cursor = "auto";
-  //demo.style.color = "yellow";
+  demo.style.color = "yellow";
   document.getElementById("demo").innerHTML = updatedTime + ':' + minutes + ':' + seconds + ':' + milliseconds ;
 }
 </script>  
