@@ -1,6 +1,6 @@
 <svg width="625" height="430" xmlns="http://www.w3.org/2000/svg">
   <rect width="100%" height="100%" fill="none"/>
-  <g class="currentLayer" fill="red" stroke="red">
+  <g class="currentLayer"> <!--- fill="red" stroke="red"> --->
     <path d="M88.15 99.3c0-52.25 42.84-94.58 95.73-94.58 52.9 0 95.74 42.33 95.74 94.59 0 52.26-42.85 94.59-95.74 94.59-52.89 0-95.73-42.33-95.73-94.6z"/> 
     <path d="M94.45 89.52c0-45.3 34.23-82 76.5-82 42.26 0 76.5 36.7 76.5 82s-34.24 82-76.5 82c-42.27 0-76.5-36.7-76.5-82z"/> 
     <path d="M119.7 141.7h103v132h-103z"/> 
