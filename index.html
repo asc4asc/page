@@ -12,8 +12,9 @@
 
 <body>
 
+<center>  
 <p>A script on this page starts this clock:</p>
-<center>
+
 <p>    
 <p id="demo"></p>
 
@@ -24,6 +25,10 @@
 var myVar = setInterval(myTimer ,100);
 function myTimer() {
   var d = new Date();
+  var demo=document.getElementById("demo").innerHTML;
+  demo.style.background = "#FF0000";
+  demo.style.cursor = "auto";
+  demo.style.color = "yellow";
   document.getElementById("demo").innerHTML = d.toLocaleTimeString();
 }
 </script>  
