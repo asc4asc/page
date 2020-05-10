@@ -24,7 +24,7 @@
 <script>
 var myVar = setInterval(myTimer ,100);
 var savedTime = new Date().getTime();
-var updateTime;
+var updatedTime;
   
 function myTimer() {
   updatedTime = new Date().getTime();
@@ -48,7 +48,7 @@ function myTimer() {
   demo.style.background = "#FF0000";
   demo.style.cursor = "auto";
   demo.style.color = "yellow";
-  document.getElementById("demo").innerHTML = updateTime;
+  document.getElementById("demo").innerHTML = updatedTime;
 }
   
 </body>
