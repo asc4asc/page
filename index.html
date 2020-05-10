@@ -22,7 +22,7 @@
 </center>
     
 <script>
-var myVar = setInterval(myTimer ,100);
+var myVar = setInterval(myTimer ,1);
 var savedTime = new Date().getTime();
 var startTime = new Date().getTime();
 var updatedTime;
@@ -39,7 +39,7 @@ function myTimer() {
   var seconds = Math.floor((difference % (1000 * 60)) / 1000);
   var milliseconds = Math.floor((difference % (1000 * 60)) / 100);
   // if (minutes >2 ) { pauseTimer(); pauseTimer1(); };
-  minutes = 2-1*minutes; 
+  minutes = 59-1*minutes; 
   minutes = (minutes < 10) ?  minutes : minutes;
   
   seconds = 59-1*seconds;
@@ -49,7 +49,7 @@ function myTimer() {
   demo.style.background = "#FF0000";
   demo.style.cursor = "auto";
   //demo.style.color = "yellow";
-  document.getElementById("demo").innerHTML = updatedTime + ':' + minutes + ':' + seconds;
+  document.getElementById("demo").innerHTML = updatedTime + ':' + minutes + ':' + seconds + ':' + milliseconds ;
 }
 </script>  
   
