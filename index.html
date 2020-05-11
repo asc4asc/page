@@ -32,16 +32,17 @@ var myVar = setInterval(myTimer ,1);
 var startTime0 = new Date();
 var saveTime0 = new Date();
 var saveTime1 = new Date();
-var stopTime1 = new Date();  
+var stopTime1 = new Date();
+var diffTime0 = new Date();  
 
 function startTimer() {
   myVar = setInterval(myTimer ,1);
-  saveTime1 = new Date();
+  saveTime0 = new Date();
 }  
 
 function stopTimer() {
   var err = clearInterval(myVar);
-  stopTime1 = new Date();
+  diffTime0= saveTime0 - new Date();
 }   
   
 function myTimer() {
@@ -62,7 +63,7 @@ function myTimer() {
 
   var e = new Date();
   
-  e = startTime0 - e  + 1 * 60000;
+  e = startTime0 - e - diffTime0 + 1 * 60000;
   if (e*1 < 0) { stopTimer(); }
   
   var minutes = Math.floor((e % (1000 * 60 * 60)) / (1000 * 60));
