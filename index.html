@@ -61,7 +61,7 @@ function myTimer() {
   document.getElementById("demo").innerHTML = hours + ':' + minutes + ':' + seconds + ':' + milliseconds ;
 
   var e = new Date();
-  e = e - saveTime1;
+  e = saveTime1 - e  + 3 * 60000;
   
   var minutes = Math.floor((e % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((e % (1000 * 60)) / 1000);
