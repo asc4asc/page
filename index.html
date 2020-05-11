@@ -27,15 +27,20 @@
 
 var myVar = setInterval(myTimer ,1);  
 var startTime = new Date();
-
+var saveTime = new Date();
+  
 var updatedTime;
 
+function stopTimer() {
+  var err = clearInterval(myVar);
+}   
+  
 function startTimer() {
   myVar = setInterval(myTimer ,1);
 }  
   
 function myTimer() {
-  updatedTime = new Date().getTime();
+  updatedTime = new Date();
   if (savedTime){
     difference = (updatedTime - startTime) + savedTime;
   } else {
