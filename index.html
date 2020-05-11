@@ -17,6 +17,7 @@
 
 <p>    
 <p id="demo">:Test Me:</p>
+<p id="demo2">:Test Me:</p>  
 
 <button onclick="startTimer(myVar)">Start time</button>
 <button onclick="clearInterval(myVar)">Stop time</button>
@@ -56,16 +57,16 @@ function myTimer() {
   milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
   document.getElementById("demo").innerHTML = hours + ':' + minutes + ':' + seconds + ':' + milliseconds ;
 
-  d = saveTime1 - stopTime1;
-  var hours =d.getHours();
+  var e = saveTime1 - stopTime1;
+  var hours =e.getHours();
   hours = (hours < 10) ?  hours : hours;
-  var minutes =d.getMinutes();
+  var minutes =e.getMinutes();
   minutes = (minutes < 10) ?  minutes : minutes;
-  var seconds = d.getSeconds();
+  var seconds = e.getSeconds();
   seconds = (seconds < 10) ? "0" + seconds : seconds;
-  var milliseconds = d.getMilliseconds();
+  var milliseconds = e.getMilliseconds();
   milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
-  document.getElementById("demo").innerHTML = hours + ':' + minutes + ':' + seconds + ':' + milliseconds ;
+  document.getElementById("demo2").innerHTML = hours + ':' + minutes + ':' + seconds + ':' + milliseconds ;
 }
 </script>  
   
