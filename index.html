@@ -61,11 +61,12 @@ function myTimer() {
   document.getElementById("demo").innerHTML = hours + ':' + minutes + ':' + seconds + ':' + milliseconds ;
 
   var e = new Date();
+  e = e.getTime() - saveTime1.getTime();
   // var hours = e.getHours();
   // hours = (hours < 10) ?  hours : hours;
   // var minutes =e.getMinutes();
   // minutes = (minutes < 10) ?  minutes : minutes;
-  var seconds = e.getSeconds()  - saveTime1.getSeconds();
+  var seconds = e.getSeconds(); //  - saveTime1.getSeconds();
   seconds = (seconds < 10) ? "0" + seconds : seconds;
   // var milliseconds = e.getMilliseconds();
   // milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
