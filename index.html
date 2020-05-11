@@ -18,14 +18,21 @@
 <p>    
 <p id="demo"></p>
 
-<button onclick="clearInterval(myVar)">Stop time</button>
+<button onclick="startTimer(myVar)">Stop time</button>
+<button onclick="clearInterval(myVar)">Start time</button>
+
 </center>
     
 <script>
-var myVar = setInterval(myTimer ,1);
+
+  
 var savedTime = new Date().getTime();
 var startTime = new Date().getTime();
 var updatedTime;
+
+function startTimer() {
+  var myVar = setInterval(myTimer ,1);
+}  
   
 function myTimer() {
   updatedTime = new Date().getTime();
