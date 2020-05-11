@@ -42,7 +42,7 @@ function startTimer() {
 
 function stopTimer() {
   var err = clearInterval(myVar);
-  diffTime0 = diffTime0 + saveTime0 - new Date();
+  diffTime0 = diffTime0 + saveTime0.GetTime() - new Date();
 }   
   
 function myTimer() {
