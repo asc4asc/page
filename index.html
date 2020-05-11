@@ -26,21 +26,20 @@
 <script>
 
 var myVar = setInterval(myTimer ,1);  
-var startTime = new Date();
-var saveTime = new Date();
-var updatedTime = 0;
+var startTime0 = new Date();
+var saveTime0 = new Date();
 
 function startTimer() {
   myVar = setInterval(myTimer ,1);
+  var saveTime1 = new Date();
 }  
 
 function stopTimer() {
   var err = clearInterval(myVar);
+  var stopTime1 = new Date();
 }   
   
 function myTimer() {
-  updatedTime = new Date();
-  // difference = (updatedTime - startTime) + savedTime;
   demo.style.background = "#FF0000";
   demo.style.cursor = "auto";
   demo.style.color = "yellow";
