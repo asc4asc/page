@@ -60,7 +60,8 @@ function myTimer() {
   milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
   document.getElementById("demo").innerHTML = hours + ':' + minutes + ':' + seconds + ':' + milliseconds ;
 
-  var e = saveTime1 - stopTime1;
+  var e = new Date();
+  e = e - saveTime1;
   var hours = e.getHours();
   hours = (hours < 10) ?  hours : hours;
   var minutes =e.getMinutes();
