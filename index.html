@@ -31,13 +31,13 @@ var saveTime = new Date();
   
 var updatedTime;
 
-function stopTimer() {
-  var err = clearInterval(myVar);
-}   
-  
 function startTimer() {
   myVar = setInterval(myTimer ,1);
 }  
+
+function stopTimer() {
+  var err = clearInterval(myVar);
+}   
   
 function myTimer() {
   updatedTime = new Date();
