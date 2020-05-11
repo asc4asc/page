@@ -63,7 +63,7 @@ function myTimer() {
 
   var e = new Date();
   
-  e = startTime0 - e - diffTime0 + 1 * 60000;
+  e = saveTime0 - e - diffTime0 + 1 * 60000;
   if (e*1 < 0) { stopTimer(); }
   
   var minutes = Math.floor((e % (1000 * 60 * 60)) / (1000 * 60));
