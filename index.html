@@ -34,23 +34,16 @@ function myTimer() {
   } else {
     difference =  updatedTime - startTime;
   }
-
-  var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((difference % (1000 * 60)) / 1000);
-  var milliseconds = Math.floor(difference % (1000 * 60)) / 100;
-  // minutes = 59-1*minutes; 
-  minutes = (minutes < 10) ?  minutes : minutes;
-  
-  // seconds = 59-1*seconds;
-  seconds = (seconds < 10) ? "0" + seconds : seconds;
-  // milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
   demo.style.background = "#FF0000";
   demo.style.cursor = "auto";
   demo.style.color = "yellow";
   var d = new Date();
-  var seconds = d.getSeconds();
   var minutes =d.getMinutes();
+  minutes = (minutes < 10) ?  minutes : minutes;
+  var seconds = d.getSeconds();
+  seconds = (seconds < 10) ? "0" + seconds : seconds;
   var milliseconds = d.getMilliseconds();
+  milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
   document.getElementById("demo").innerHTML = minutes + ':' + seconds + ':' + milliseconds ;
 }
 </script>  
