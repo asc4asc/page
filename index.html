@@ -48,8 +48,9 @@ function myTimer() {
   demo.style.cursor = "auto";
   demo.style.color = "yellow";
   var d = new Date();
-  var milliseconds = d.getMilliseconds();
+  var seconds = d.getSeconds();
   var minutes =d.getMinutes();
+  var milliseconds = d.getMilliseconds();
   document.getElementById("demo").innerHTML = updatedTime + ':' + minutes + ':' + seconds + ':' + milliseconds ;
 }
 </script>  
