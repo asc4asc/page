@@ -45,13 +45,14 @@ function myTimer() {
   demo.style.cursor = "auto";
   demo.style.color = "yellow";
   var d = new Date();
+  var hours =d.getHours();
   var minutes =d.getMinutes();
   minutes = (minutes < 10) ?  minutes : minutes;
   var seconds = d.getSeconds();
   seconds = (seconds < 10) ? "0" + seconds : seconds;
   var milliseconds = d.getMilliseconds();
   milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
-  document.getElementById("demo").innerHTML = minutes + ':' + seconds + ':' + milliseconds ;
+  document.getElementById("demo").innerHTML = hours + ':' + minutes + ':' + seconds + ':' + milliseconds ;
 }
 </script>  
   
