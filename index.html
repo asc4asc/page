@@ -46,6 +46,7 @@ function myTimer() {
   demo.style.color = "yellow";
   var d = new Date();
   var hours =d.getHours();
+  hours = (hours < 10) ?  hours : hours;
   var minutes =d.getMinutes();
   minutes = (minutes < 10) ?  minutes : minutes;
   var seconds = d.getSeconds();
