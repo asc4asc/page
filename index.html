@@ -28,8 +28,7 @@
 var myVar = setInterval(myTimer ,1);  
 var startTime = new Date();
 var saveTime = new Date();
-  
-var updatedTime;
+var updatedTime = 0;
 
 function startTimer() {
   myVar = setInterval(myTimer ,1);
@@ -41,11 +40,7 @@ function stopTimer() {
   
 function myTimer() {
   updatedTime = new Date();
-  if (savedTime){
-    difference = (updatedTime - startTime) + savedTime;
-  } else {
-    difference =  updatedTime - startTime;
-  }
+  difference = (updatedTime - startTime) + savedTime;
   demo.style.background = "#FF0000";
   demo.style.cursor = "auto";
   demo.style.color = "yellow";
