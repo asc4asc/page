@@ -63,11 +63,12 @@ function myTimer() {
   document.getElementById("demo").innerHTML = hours + ':' + minutes + ':' + seconds + ':' + milliseconds ;
 
   var e = new Date();
-  e = saveTime0*1 - e*1 + 1 * 60000 - diffTime0*1;
-  if (e*1 < 0) { stopTimer(); e=0; }
+  var n = e.getTime(); 
+  n = saveTime0*1 - n*1 + 1 * 60000 - diffTime0*1;
+  if (n*1 < 0) { stopTimer(); n=0; }
   
-  var minutes = Math.floor((e % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((e % (1000 * 60)) / 1000);
+  var minutes = Math.floor((n % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((n % (1000 * 60)) / 1000);
   minutes = (minutes < 10) ?  minutes : minutes;
   seconds = (seconds < 10) ? "0" + seconds : seconds;
  
