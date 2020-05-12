@@ -91,6 +91,7 @@ function fullscreen(){
         } else if(elem.webkitRequestFullscreen){
             elem.webkitRequestFullscreen(elem.ALLOW_KEYBOARD_INPUT);
         }
+        document.body.style.background = "violet";
     } else {
         if(document.exitFullscreen){
             document.exitFullscreen();
@@ -101,8 +102,7 @@ function fullscreen(){
         } else if(document.webkitExitFullscreen){
             document.webkitExitFullscreen();
         }
-    }
-    document.body.style.background = "violet";
+    }    
 }
   
 </script> 
