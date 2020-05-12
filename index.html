@@ -72,6 +72,7 @@ function myTimer() {
   minutes = (minutes < 10) ?  minutes : minutes;
   seconds = (seconds < 10) ? "0" + seconds : seconds;
   var milliseconds = e.getMilliseconds();
+  milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
   document.getElementById("demo2").innerHTML = minutes + ':' + seconds  + ':' + milliseconds ;
 }
   
