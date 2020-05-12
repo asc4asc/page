@@ -66,7 +66,7 @@ function myTimer() {
   var n = e.getTime(); 
   n = saveTime0*1 - n*1 + 1 * 60000 - diffTime0*1;
   if (n*1 < 0) { stopTimer(); n=0; }
-  e.setTime()=n;
+  e = Date(n);
   var minutes = e.getMinutes();
   minutes = (minutes < 10) ?  minutes : minutes;
   var seconds = e.getSeconds();
