@@ -21,6 +21,7 @@
 
 <button onclick="startTimer(myVar)">Start time</button>
 <button onclick="stopTimer(myVar)">Stop time</button>
+<button onclick="fullscreen();">Full Screen</button>
 
 <!---  <button onclick="clearInterval(myVar)">Stop time</button> --->
 
@@ -38,7 +39,6 @@ var diffTime0 = 0;
 function startTimer() {
   myVar = setInterval(myTimer ,1);
   saveTime0 = new Date();
-  fullscreen();
 }  
 
 function stopTimer() {
