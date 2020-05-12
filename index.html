@@ -67,9 +67,9 @@ function myTimer() {
   n = saveTime0*1 - n*1 + 1 * 60000 - diffTime0*1;
   if (n*1 < 0) { stopTimer(); n=0; }
   e.getTime(n);
-  var minutes = Math.floor((n % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((n % (1000 * 60)) / 1000);
+  var minutes = e.getMinutes();
   minutes = (minutes < 10) ?  minutes : minutes;
+  var seconds = e.getSeconds();
   seconds = (seconds < 10) ? "0" + seconds : seconds;
   var milliseconds = e.getMilliseconds();
   milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
