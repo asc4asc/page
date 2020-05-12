@@ -80,7 +80,7 @@ function myTimer() {
   
 function fullscreen(){
     elem = document.getElementsByTagName("body")[0];
-    
+    document.body.style.background = "violet";
     if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement){
         if(elem.requestFullscreen){
             elem.requestFullscreen();
@@ -90,8 +90,7 @@ function fullscreen(){
             elem.mozRequestFullScreen();
         } else if(elem.webkitRequestFullscreen){
             elem.webkitRequestFullscreen(elem.ALLOW_KEYBOARD_INPUT);
-        }
-        document.body.style.background = "violet";
+        }  
     } else {
         if(document.exitFullscreen){
             document.exitFullscreen();
