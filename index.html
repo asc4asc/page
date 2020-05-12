@@ -105,7 +105,6 @@ function fullscreen(){
     elem = document.getElementsByTagName("body")[0];
     
     if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement){
-        document.body.style.background = "violet";
         if(elem.requestFullscreen){
             elem.requestFullscreen();
         } else if(elem.msRequestFullscreen){
