@@ -102,8 +102,7 @@ function myTimer() {
 }
   
 function fullscreen(){
-    elem = document.getElementsByTagName("body")[0];
-    
+    var elem = document.documentElement;  
     if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement){
         if(elem.requestFullscreen){
             elem.requestFullscreen();
